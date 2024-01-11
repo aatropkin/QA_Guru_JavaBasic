@@ -71,6 +71,17 @@ public class Main {
         System.out.println("a || b = " + (x || y) );
         System.out.println("!(a && b) = " + !(x && y));
 
+        //вычисление комб. типов данных
+        int s = 14;
+        double r = 7.4444;
+        int resultAdd = (int) (s + r);
+        int resultMul = (int) (s * r);
+        System.out.println(resultAdd); // 21 тк 7
+        System.out.println(resultMul); //104 тк int , дробная часть отбрасывается
+        double resulAdd = s + r;
+        double resulMul = s * r;
+        System.out.println(resulAdd); // 21.4444 тк double
+        System.out.println(resulMul); // 104.2216 тк double
 
     }
 }
